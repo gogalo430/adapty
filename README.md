@@ -58,3 +58,12 @@ After starting the Docker containers, you'll need to import the database.
 > docker exec -i [MySQL-container-ID] (2122d061d483) mysql -uwordpress -pwordpress wordpress < database_dump.sql
 >
 
+
+# Contact Page
+
+## Plugins used
+
+* Contact fomr 7
+* Country & Phone Field Contact Form 7
+
+page can be accessed through this link Country & Phone Field Contact Form 7
