@@ -20,10 +20,30 @@ Version: 1.0
 html{
 	font-family: 'Inter', sans-serif;
 }
+body{
+	background-color: rgb(243, 245, 246);
+}
 .margin-0{
 	margin:0;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(102, 102, 102);
+  opacity: 1; /* Firefox */
+}
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(102, 102, 102);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(102, 102, 102);
+}
+select:invalid {
+    color: rgb(102, 102, 102) !important;
+}
+select:focus {
+    color: rgb(102, 102, 102) !important;
+}
 .button-p a{
 	padding: 0;
 }
@@ -94,6 +114,60 @@ html{
 .mobile-img{
 	display: none;
 }
+
+
+
+/*Contact page styles*/
+.adapty-form{
+	background-color: #fff;
+	border-radius: 20px;
+    padding: 20px;
+}
+.adapty-form-set{
+	display: flex;
+	gap: 12px;
+	justify-content:space-evenly ;
+}
+.adapty-inp{
+	width: 250px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border:1px solid #bdbec0;
+}
+.adapty-inp-1{
+	width: 251px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border:1px solid #bdbec0;
+}
+.adapty-inp-2{
+	width: 243px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border:1px solid #bdbec0;
+}
+.wpcf7-form{
+	width: 100%;
+}
+.submit{
+	background-color: rgb(67, 175, 108);
+	color: #fff;
+	font-size: 	17px;
+	width: 	100%;
+	border:1px solid rgb(67, 175, 108);
+	padding-top: 	15px;
+	padding-bottom: 	15px;
+	border-radius	: 	5px;
+}
+.intl-tel-input.allow-dropdown .selected-flag, .intl-tel-input.separate-dial-code .selected-flag{
+	border-right: 1px solid #bdbec0;
+}
+.aggree{
+	position: relative;
+    top: -14px;
+}
+
+
 /*Responsivness*/
 @media only screen and (max-width: 600px) {
 	.image-off{
