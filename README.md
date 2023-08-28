@@ -48,3 +48,13 @@ Access the WordPress admin panel and navigate to Appearance > Themes.
 ## Step 2: Activate Theme
 Find "Adapty" in the list of themes and click "Activate."
 
+## Import the Database
+
+After starting the Docker containers, you'll need to import the database.
+
+* Locate the database dump file (e.g., database_dump.sql) in the repository.
+* Run the following command to import the database into the MySQL container:
+>
+> docker exec -i [MySQL-container-ID] (2122d061d483) mysql -uwordpress -pwordpress wordpress < database_dump.sql
+>
+
